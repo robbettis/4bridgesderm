@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Four Bridges Billing (Parody)</title>
+<meta name="description" content="A satirical, non-functional mockup of a patient billing page. It cannot accept payments.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f6f8;
+    --card: #ffffff;
+    --ink: #1f2a37;
+    --muted: #64748b;
+    --line: #dde3ea;
+    --accent: #2f6f8f;
+    --warn-bg: #fff4d6;
+    --warn-ink: #7a5300;
+    --warn-line: #f0c75e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Open Sans", system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  .banner {
+    background: var(--warn-bg);
+    color: var(--warn-ink);
+    border-bottom: 2px solid var(--warn-line);
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 16px 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .mark {
+    width: 42px; height: 42px; border-radius: 10px;
+    background: var(--accent); color: #fff;
+    display: grid; place-items: center; font-weight: 700;
+  }
+  header h1 { font-size: 20px; margin: 0; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  h2 { font-size: 17px; margin: 0 0 4px; }
+  .sub { color: var(--muted); font-size: 13px; margin: 0 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  td { padding: 9px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+  td:last-child { text-align: right; white-space: nowrap; padding-left: 12px; }
+  td small { display: block; color: var(--muted); font-size: 12px; }
+  tr.total td { font-weight: 700; font-size: 16px; border-bottom: none; padding-top: 14px; }
+  .notice {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-line);
+    color: var(--warn-ink);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  label { display: block; font-size: 13px; font-weight: 600; margin: 12px 0 4px; }
+  .fake-input {
+    border: 1px dashed var(--line);
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: #9aa6b2;
+    font-size: 14px;
+    user-select: none;
+  }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  button {
+    margin-top: 18px;
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #result {
+    display: none;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #e8f3f8;
+    font-size: 14px;
+  }
+  footer {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 8px 16px 40px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="banner">PARODY MOCKUP · This page cannot take payments · Do not enter real card details anywhere on it</div>
+
+<header>
+  <div class="mark">4B</div>
+  <div>
+    <h1>Four Bridges Dermatology · Patient Billing</h1>
+    <p>A satirical visual example, not a real billing portal</p>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Your Invoice</h2>
+    <p class="sub">Invoice #SPF-0050 · Date of service: The day you finally asked about that freckle</p>
+    <table>
+      <tr><td>Looking at a mole<small>Approximately 4 seconds, with lamp</small></td><td>$340.00</td></tr>
+      <tr><td>Saying "hmm"<small>Billed per hmm (2)</small></td><td>$170.00</td></tr>
+      <tr><td>Sunscreen lecture<small>Mandatory, non-refundable</small></td><td>$95.00</td></tr>
+      <tr><td>Paper gown rental<small>Open-back edition</small></td><td>$62.00</td></tr>
+      <tr><td>Being told to "keep an eye on it"<small>Advice, continuing</small></td><td>$118.00</td></tr>
+      <tr><td>Waiting room ambiance<small>Includes one 2019 magazine</small></td><td>$45.00</td></tr>
+      <tr><td>Insurance adjustment<small>Your insurer has also said "hmm"</small></td><td>−$0.00</td></tr>
+      <tr class="total"><td>Amount due</td><td>$830.00</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Pay Your Balance</h2>
+    <p class="sub">For display purposes only</p>
+
+    <div class="notice">
+      <strong>These are not real fields.</strong> They are pictures of form fields. You can't type into them, nothing is collected, and no payment can be made on this page.
+    </div>
+
+    <label>Name on card</label>
+    <div class="fake-input" aria-hidden="true">Example only</div>
+
+    <label>Card number</label>
+    <div class="fake-input" aria-hidden="true">•••• •••• •••• ••••</div>
+
+    <div class="row">
+      <div>
+        <label>Expiry</label>
+        <div class="fake-input" aria-hidden="true">MM / YY</div>
+      </div>
+      <div>
+        <label>CVC</label>
+        <div class="fake-input" aria-hidden="true">•••</div>
+      </div>
+    </div>
+
+    <button type="button" id="pay">Pay $830.00 (it won't)</button>
+    <div id="result" role="status">
+      Nothing happened, on purpose. This is a parody page with no payment processor behind it. Please apply sunscreen and carry on.
+    </div>
+  </section>
+</main>
+
+<footer>
+  This page is satire and a visual example only. It is not operated by any medical practice, it does not process payments, and it does not collect or store any information.
+</footer>
+
+<script>
+  document.getElementById('pay').addEventListener('click', function () {
+    document.getElementById('result').style.display = 'block';
+  });
+</script>
+</body>
+</html>
